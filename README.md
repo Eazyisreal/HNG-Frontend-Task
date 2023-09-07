@@ -34,7 +34,7 @@ To fulfill the task requirements, I followed these steps:
 
 3. **JavaScript for Real-Time Data:** I used JavaScript to dynamically update the current day of the week and UTC time in milliseconds. I also added a function to handle errors, such as missing profile pictures or GitHub URLs.
 
-4. **GitHub Hosting:** I hosted the web page on GitHub Pages, making it accessible via the URL [https://yourusername.github.io/your-repo](https://yourusername.github.io/your-repo).
+4. **GitHub Hosting:** I hosted the web page on GitHub Pages, making it accessible via the URL [https://eazyisreal.github.io/HNG-Frontend-Task/](https://eazyisreal.github.io/HNG-Frontend-Task/).
 
 5. **Testing:** I tested the page thoroughly to ensure that all elements were displayed correctly, real-time data updated as expected, and error handling worked as intended. I used the data-testid attributes for testing.
 
