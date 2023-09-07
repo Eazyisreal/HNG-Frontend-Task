@@ -10,7 +10,7 @@ function updateData() {
 function handleErrors() {
     const profileImage = document.querySelector('[data-testid="slackDisplayImage"]');
     profileImage.onerror = () => {
-        profileImage.src = 'default_profile.jpg'; // Replace with a default image
+        profileImage.src = 'eazy.jpg'; // Replace with a default image
         profileImage.alt = 'Default Profile';
     };
 
