@@ -1,66 +1,107 @@
-/* Reset some default styles for better consistency */
+ @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
 }
 
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-/* Header styles */
-header {
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-header h1 {
-    font-size: 32px;
-    margin: 10px 0;
-}
-
-header img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-top: 10px;
-    border: 3px solid #fff;
-}
-
-/* Main content styles */
 main {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  
 }
 
-p {
-    font-size: 18px;
-    margin-bottom: 10px;
+.card {
+  width: 400px;
+  background-color: #fff;
+  border: 1px solid rgb(209, 200, 200);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem ;
+  gap: 1rem;
 }
 
-a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s ease;
+.slackProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
 }
 
-a:hover {
-    color: #0056b3;
-    text-decoration: underline;
+p[data-testid="slackUserName"] {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p[data-testid="myTrack"] {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+a[data-testid="githubURL"] {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+a[data-testid="githubURL"]:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.slackProfile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+}
+
+.currentDayAndTime {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1.3rem;
+  margin-bottom: 20px;
+}
+
+
+/* media query for phones */
+
+@media (max-width: 600px) {
+  .card {
+    width: 300px;
+  }
+  .slackProfile img {
+    width: 150px;
+    height: 150px;
+  }
+  p[data-testid="slackUserName"] {
+    font-size: 1rem;
+  }
+  p[data-testid="myTrack"] {
+    font-size: 0.8rem;
+  }
+  a[data-testid="githubURL"] {
+    font-size: 0.8rem;
+  }
 }

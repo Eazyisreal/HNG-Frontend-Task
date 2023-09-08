@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend Intern Task</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1 data-testid="slackUserName">Eazyisreal</h1>
-        <img src="eazyisreal.jpg" alt="Eazyisreal" data-testid="slackDisplayImage">
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        HNG-X Internship | Stage 1 Task | Frontend Development
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <main>
-        <p data-testid="currentDayOfTheWeek"></p>
-        <p data-testid="currentUTCTime"></p>
-        <p data-testid="myTrack">Frontend</p>
-        <a href="https://github.com/Eazyisreal/HNG-Frontend-Task" data-testid="githubURL">GitHub Repository</a>
+      <div class="card">
+        <div class="slackProfile">
+          <img
+            src="eazyisreal.jpg"
+            alt="My Slack Display Picture"
+            data-testid="slackDisplayImage"
+          />
+          <p data-testid="slackUserName">Eazyisreal</p>
+          <p data-testid="myTrack">Frontend Development</p>
+        </div>
+
+        <div class="currentDayAndTime">
+          <p data-testid="currentDayOfTheWeek"></p>
+
+          <p data-testid="currentUTCTime"></p>
+        </div>
+
+        <a
+          href="https://github.com/Eazyisreal/HNG-Frontend-Task"
+          data-testid="githubURL"
+          target="_blank"
+          >GitHub URL</a
+        >
+      </div>
     </main>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
