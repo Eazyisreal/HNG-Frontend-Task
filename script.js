@@ -11,7 +11,7 @@ function updateDateTime() {
     const utcTime = date.getTime();
 
     currentDayOfTheWeek.textContent = dayOfTheWeek;
-    currentUTCTime.textContent = `Current UTC Time (Milliseconds): ${utcTime}`;
+    currentUTCTime.textContent =  utcTime;
 }
 
 // Call updateDateTime initially to set the initial values
